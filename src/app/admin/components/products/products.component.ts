@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-products',
+  selector: 'app-products:not(p)',
   templateUrl: './products.component.html',
   styleUrls: ['./products.component.scss']
 })
