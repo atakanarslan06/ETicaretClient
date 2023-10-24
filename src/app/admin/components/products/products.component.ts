@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { HttpClientService } from 'src/app/services/common/http-client.service';
 
 @Component({
   selector: 'app-products:not(p)',
@@ -7,4 +8,14 @@ import { Component } from '@angular/core';
 })
 export class ProductsComponent {
 
+constructor(private httpClientService: HttpClientService){}
+
+
+  ngOnInit(): void{
+    this.httpClientService.get({
+      
+    })
+  }
+
 }
+
