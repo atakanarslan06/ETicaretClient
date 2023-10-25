@@ -13,8 +13,8 @@ constructor(private httpClientService: HttpClientService){}
 
   ngOnInit(): void{
     this.httpClientService.get({
-      
-    })
+      controller : "products"
+    }).subscribe(data => console.log(data));
   }
 
 }
