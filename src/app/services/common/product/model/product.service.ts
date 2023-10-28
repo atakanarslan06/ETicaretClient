@@ -7,11 +7,8 @@ import { CreateProduct } from 'contracts/create_product';
 })
 export class ProductService {
 
-  constructor(private httpClientService : HttpClientService) { }
+  constructor(private httpClientService : HttpClientService) { } 
 
-  create(product: CreateProduct) {
-    this.httpClientService.post({controller: "products"}, product).subscribe(result => {
 
-    });
-  }
 }
+
